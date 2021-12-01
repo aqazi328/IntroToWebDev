@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Name: Ahson Qazi
+Date Created: 11/30/2021
+Most recent revision: 11/30
+-->
+
+<html>
+    <head>
+        <title>Ahson Qazi's Portfolio</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css">
+        <style>
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            table, th, td {
+                border: 1px solid #0d1f2d;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            table {
+                width: 90%;
+                margin: auto;
+            }
+            tr{
+                height: 30px;
+            }
+            th{
+                background-color: #546a7b;
+                color: #f2eded;
+            }
+            tr:nth-child(odd) {
+                background-color: #e4c3ad;
+            }
+            .right-content{
+                float:left;
+            }
+            article img {
+                float:left;
+            }
+            article {
+                margin-bottom: 16px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <header> 
+                <h1>Portfolio for Ahson Qazi</h1>
+            </header>
+            
+
+            <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+            <nav class="border">
+                <p><a href="projects.html" target="_blank">Projects</a></p>
+                <p><a href="contact.html" target="_blank">Contact</a></p>
+                <p><a href="testimonials.html" target="_blank">Testimonials</a></p>
+                <div class="clear-float"></div>
+            </nav>
+            
+            <section>
+                
+
+                <article class="border" id="about" >
+                    <h2><em>About Me</em></h2>
+                    <img src="images/me.jpeg" alt="Pic of me" width="300" style="float:left;">
+                    <p>paragraph about me. I'm going to make <strong>this</strong> bold.</p>
+                    <p>another paragraph. <strong>this</strong> will be bold as well.</p>
+                    <div class="clear-float"></div>
+                </article>
+
+                <article id="experience">
+                    <h2><em>Past Experiences</em></h2>
+                    <img src="images/city.jpg" alt="Pic of city" width="300">
+                    <div class="right-content">
+                        <table>
+                            <caption>Employment History</caption>
+                            <thead>
+                                <tr>
+                                    <th>Years of Employment</th>
+                                    <th>Title</th>
+                                    <th>Company</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2021 - Present</td>
+                                    <td>Front End Developer Trainee</td>
+                                    <td>mThree</td>
+                                </tr>
+                                <tr>
+                                    <td>2019 - 2021</td>
+                                    <td>Call Center Representative</td>
+                                    <td>AWL</td>
+                                </tr>
+                                <tr>
+                                    <td>2018 - 2019</td>
+                                    <td>iOS Tier 1 Support Advisor</td>
+                                    <td>Apple Inc.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="clear-float"></div>
+                </article>
+
+                <article id="hobbies">
+                    <h2><em>Hobbies</em></h2>
+                    <img src="images/technology.jpg" alt="Pic of tech" width="300">
+                    <div class="right-content">
+                        <ul>
+                            <li>TV Shows</li>
+                            <ol>
+                                <li>Attack on Titan</li>
+                                <li>The Office</li>
+                                <li>Rick and Morty</li>
+                            </ol>
+
+                            <li>Video Games</li>
+                            <ol>
+                                <li>Call of Duty</li>
+                                <li>NBA 2k</li>
+                                <li>Spider-Man</li>
+                            </ol>
+                        </ul>
+
+                        <ul>
+                            <li>Sports</li>
+                            <ul>
+                                <li>Basketball</li>
+                                <li>Football</li>
+                                <li>Soccer</li>
+                            </ul>
+                            <li>Activities</li>
+                            <ul>
+                                <li>Gym</li>
+                                <li>Eating Out</li>
+                                <li>Walking</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="clear-float"></div>
+                </article>
+
+                <footer>
+                    <p>&copy; 2020 Ahson Qazi. All rights reserved.</p>
+                </footer>
+
+            </section>
+
+        </main>
+    </body>
+</html>
