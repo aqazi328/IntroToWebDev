@@ -11,12 +11,12 @@
     <div class="container">
         <h1>CODE-ALONG: Click to Add Items</h1>
         <form name="numberFun" class="needs-validation" onsubmit="return validate();" 
-            onreset="resetView();" novalidate>
+            onreset="resetView();" novalidate> <!-- when reset is clicked, resetView() is called and non-validates form-->
             <div class="form-row">
                 <div class="form-group col">
-                    <label for="num1">Num 1</label>
-                    <input type="number" class="form-control" id="num1" required>
-                    <div class="invalid-feedback">
+                    <label for="num1">Number 1</label> <!--label for num1 which is direct reference to js variable -->
+                    <input type="number" class="form-control" id="num1" required> <!-- number is int type, form-control is used by bootstrap, num1 is reference to JS var -->
+                    <div class="invalid-feedback">              <!-- presented to user when invalid input is entered-->
                         Num 1 is required and must be a number.
                     </div>
                 </div> <!-- end .form-group -->
@@ -32,12 +32,12 @@
             <div class="form-row">
                 <div class="form-group col">
                     <button type="submit" id="submitButton" class="btn btn-primary">
-                        Calculate</button>
-                    <button type="reset" class="btn btn-secondary">Reset</button>
+                        Calculate</button> <!--submitButton is direct reference to bool var in JS-->
+                    <button type="reset" class="btn btn-secondary">Reset</button> <!-- used to actually show reset button website-->
                 </div>
             </div> <!-- end .form-row -->
         </form>
-        <table id="results" class="table table-striped" style="display: none">
+        <table id="results" class="table table-striped" style="display: none"> <!-- results directly references var in js, display none by default, line 24 in js file changes this-->
             <thead>
                 <tr>
                     <th>Operation</th>
@@ -65,6 +65,6 @@
         </table>
     </div> <!-- end .container -->
 
-    <script src="clickToAddItems.js"></script>
+    <script src="clickToAddItems.js"></script> <!-- this is last to make html page load faster. JS stuff should come last-->
 </body>
 </html>
