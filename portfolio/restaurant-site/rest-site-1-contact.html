@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Name: Ahson Qazi
+Date Created: 12/02/2021
+Most recent revision: 12/02
+-->
+
+<html>
+    <head>
+        <title>AQ's Contact</title>
+        <link href="rest-site-main.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <header>
+        <h1>AQ's Restaurant</h1>
+    </header>
+
+    <nav>
+        <p><a href="rest-site-1-main.html" target="_blank">Home</a>
+        <a href="rest-site-1-menu.html" target="_blank">Menu</a>
+        <a href="rest-site-1-contact.html" target="_blank">Contact Us</a></p>
+    </nav>
+
+    <body>
+        <form action="submit.html" method="POST" class="center-contact">
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name"> <br>
+
+            <label for="email">Email:</label> 
+            <input type="text" id="email" name="email"> <br>
+
+            <label for="phone">Phone:</label> 
+            <input type="text" id="phone" name="phone"> <br>
+
+            <label for="reasonInq">Reason for Inquiry:</label>
+            <select id="reasonInq" name="reasonInq">
+                <option value="catering" selected>--Catering--</option>
+                <option value="private">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select> <br>
+
+            <label for="info">Additional Information</label>
+            <textarea id="info" name="info"></textarea> <br>
+
+            
+            Have you been to the restaurant?
+            <input type="radio" id="no" name="been" value="no">
+            <label for="choice1">No</label>
+            <input type="radio" id="yes" name="been" value="no">
+            <label for="choice2">Yes</label> <br>
+
+            Best days to contact you:
+            <input type="checkbox" id="monday" name="day" value="monday">
+            <label for="frontEnd">M</label>
+            <input type="checkbox" id="tuesday" name="day" value="tuesday">
+            <label for="backEnd">Tu</label>
+            <input type="checkbox" id="wednesday" name="day" value="wednesday">
+            <label for="database">W</label>
+            <input type="checkbox" id="thursday" name="day" value="thursday">
+            <label for="database">Th</label>
+            <input type="checkbox" id="friday" name="day" value="friday">
+            <label for="database">F</label>
+            <br>
+            <br>
+            <center><input type="submit" name="submit" value="Send Request" style="font-family:'Comic Sans MS', 'Comic Sans';"></center>
+            
+        </form>
+
+        
+    </body>
+
+    <hr class="footerhr">
+    <footer>
+        <p>123 Any Street, Houston TX, 77089</p>
+        <p>123-456-7890</p>
+    </footer>
+</html>
+    

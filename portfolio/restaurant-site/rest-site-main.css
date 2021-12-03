@@ -1,0 +1,77 @@
+header {
+    background-color:lavender;
+    color:black;
+    /* height: 100px; */
+    text-align: center;
+    padding: 4px 10px 4px 10px;
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
+nav{
+    background-color: lavender;
+    color: black;
+    padding: 4px 10px 4px 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 4px;
+}
+
+nav a {
+    color: blue;
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+}
+nav a:hover {
+    background-color: purple;
+    color:white; 
+}
+.center {
+    display: block;
+    padding: 15px 0px 0px 15px;
+    width: 400px; 
+	margin-left: auto; 
+	margin-right: auto; 
+    text-align: left
+}
+hr.footerhr {
+    border: 1px solid black;
+} 
+footer{
+    display: block;
+    /* border-top: 2px solid black; */
+    width: 400px; 
+	margin-left: auto; 
+	margin-right: auto; 
+    text-align: center;
+}
+
+body{
+    background-color: lavender;
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.center-contact {
+    display: block;
+    padding: 15px 0px 0px 15px;
+    width: 400px; 
+	margin-left: auto; 
+	margin-right: auto; 
+    text-align: right
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 8px 0px 0px 5px;
+    margin: 5px 0px 0px 5px;
+    box-sizing: border-box;
+}
+
+select{
+    width: 60%;
+    padding: 8px 0px 0px 5px;
+    margin: 5px 0px 0px 5px;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
