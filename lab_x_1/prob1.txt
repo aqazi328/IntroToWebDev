@@ -1,0 +1,6 @@
+1. opened terminal and typed "npm -v" and "node -v" to get versions
+2. used VS code to create directory "lab_x_1" and created file "app.js"
+3. entered code: "console.log("hello AQ");"
+4. opened terminal and navigated to directory app.js is in
+5. ran terminal command "node app.js" to run file
+6. got output "hello AQ"
