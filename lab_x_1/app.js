@@ -10,17 +10,22 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("Enter filename: ", function (filename) {
-    if(fs.existsSync(filename)){
-        throw Error("sorry that file exists. try again!");
-    }
-    fs.writeFile(filename, 'You are awesome!', function (err) {
-        if (err) throw err;
-        console.log('Saved!');
+var waitforinput = function(){
+    rl.question('Enter filename: ', function(filename){
+        if (!fs.existsSync(filename)){
+            rl.close();
+            fs.writeFile(filename, 'You are awesome!', function (err) {
+                if (err) throw err;
+                console.log('Saved!');
+            });
+        }
+        else{
+            console.log('Oops that filename is taken, try again!');
+            waitforinput();
+        }
     });
-    rl.close();
-});
-
+}
+waitforinput();
 
 
 
