@@ -1,0 +1,34 @@
+<!--
+Name: Ahson Qazi
+Date Created: 12/08/2021
+Most recent revision: 12/08
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<html> 
+    <head>
+        <title>Lucky Sevens</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Lucky Sevens</h1>
+        </header>
+        <form name='gameform' class='game' onsubmit="return validate();">
+            <label for="amount">Starting Bet:</label>
+            <input type="number" id="amount" value="0.00" class="bet-money" min="0.00">
+            <div class="invalid-feedback">              <!-- presented to user when invalid input is entered-->
+                Num 1 is required and must be a number.
+            </div>
+            <br>
+            <button type="submit" id = "submitButton" class="play">Play</button>
+        </form>
+        <table id="results" class="table table-striped" style="display: none">
+        </table>
+
+        <script src="backend.js"></script>
+    </body>
+</html>

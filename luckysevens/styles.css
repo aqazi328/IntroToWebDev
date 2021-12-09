@@ -1,0 +1,32 @@
+body{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h1{
+    font-size: 75px;
+}
+.game{
+    font-size: 35px;
+}
+.bet-money{
+    /* padding: 15px 0px 0px 10px; */
+    margin-left: 40px;
+    font-size: 25px;
+    background-color: red;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 5px 10px 5px 18px;
+    /* box-sizing: 10px; */
+    width: 70px;
+    border-width: 5px;
+}
+.play{
+    font-size: 35px;
+    background-color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 5px;
+}
